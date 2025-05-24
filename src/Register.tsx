@@ -1,5 +1,20 @@
 import { useState } from "react";
 
+/**
+ * Register component provides a registration form with validation for username and UK mobile number.
+ *
+ * @component
+ * @returns {JSX.Element} The registration form UI.
+ *
+ * @remarks
+ * - Username must be at least 8 characters long, contain at least 1 uppercase letter, 1 lowercase letter, 1 number, and 1 special character.
+ * - UK mobile number must start with '07' and be 11 digits long.
+ *
+ * @example
+ * ```tsx
+ * <Register />
+ * ```
+ */
 export default function Register() {
     // state variables for username and mobile
     const [username, setUsername] = useState('')
